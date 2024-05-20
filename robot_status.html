@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <link rel = "stylesheet" href="./css/style.css">
+  <link rel = "stylesheet" href="./css/bat.css">
+  <style>
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+  </style>
+    </head>
+          <div class="sidenav">
+            <a href="#">Home</a>
+            <a href="#">Manual Control</a>
+            <a href="#">Generate Mapping</a>
+            <button class="dropdown-btn">Set Position
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#"></a>
+              <a href="#">initial pos</a>
+              <a href="#">goal pos</a>
+              <a href="#">save map</a>
+            </div>
+            <a href="#">Test navigation</a>
+            <a href="robot_status.html">Robot Status</a>
+          </div>
+          <div class = "centered">
+            <div class = "bot">
+            <img bot src="img/bot.png" width="326" height="337">
+            </div>
+            <section>
+              <label for="toggle-3" class="toggle-3">
+                  <input type="checkbox" name="toggle-3" id="toggle-3" class="toggle-3__input">
+                  <span class="toggle-3__button"></span>
+              </label>
+            </section>
+
+              <section>
+                <label for="toggle-4" class="toggle-4">
+                  <input type="checkbox" name="toggle-4" id="toggle-4" class="toggle-4__input">
+                  <span class="toggle-4__button"></span>
+                </label>
+              </section>
+
+
+                <section>
+                  <label for="toggle-5" class="toggle-5">
+                      <input type="checkbox" name="toggle-5" id="toggle-5" class="toggle-5__input">
+                      <span class="toggle-5__button"></span>
+                  </label>
+            </section>
+
+            <div class="Sen1">Sensor 1</div>
+            <div class="Sen2">Sensor 2</div>
+            <div class="Sen3">Sensor 3</div>
+
+
+            <div class="container">
+              <div id="battery">
+                <div id="charge"></div>
+                <div id="charge-level"></div>
+              </div>
+              <div id="charging-time"></div>
+              <div id="activebattery"></div>
+            </div>
+            <script src="script.js"></script>
+            </div>
+
+          <div class = "centered">
+            <div id="messageContainer"></div>
+
+            <script>
+              class Box1 {
+                constructor(text) {
+                  this.text = text;
+                  this.backgroundColor = 'lightgray';
+                }
+
+                display() {
+                  const messageContainer = document.getElementById('messageContainer');
+                  const messageElement = document.createElement('div');
+                  messageElement.classList.add('message-box');
+                  messageElement.textContent = `[${this.text}]`;
+                  messageContainer.appendChild(messageElement);
+                }
+              }
+
+              class AboutVersionMessage extends Box1 {
+                constructor() {
+                  super('About');
+                }
+              }
+
+              const aboutMessage = new AboutVersionMessage();
+              aboutMessage.display();
+            </script>
+
+            <div class="box2">Device name: Robot</div>
+            <div class="box3">Version: 4.0</div>
+            
+
+          </div>
+    </body>
+</html>

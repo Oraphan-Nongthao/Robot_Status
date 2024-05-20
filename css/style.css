@@ -1,0 +1,344 @@
+/*language*/
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #222831;
+  }
+  
+ /* Fixed sidenav, full height */
+  .sidenav {
+    height: 100%;
+    width: 215px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #393E46;
+    color: #EEEEEE;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+/*  Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: #EEEEEE;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #00ADB5;
+  }
+
+  .sidenav img{
+    margin-left: 200px;
+    width: 600px;
+    height: 339px;
+  }
+
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #222831;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  /*set position center*/
+  .centered{
+    margin-top: 4%;
+    margin-left: 30%;
+  }
+
+  .centered img{
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  .centered .bot{
+    margin-top: 0%;
+    margin-left: 25%;
+  }
+  
+section {
+      margin-top: 20px;
+      margin-left: 550px;
+
+}
+.toggle-3 {
+    font-size: 0.8rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+    .toggle-3__input {
+        display: none;
+    }
+
+    .toggle-3__button {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+
+        width: 100px;
+        height: 30px;
+        background: #222831;
+        color: #EEEEEE;
+        border: solid 2px #393E46;
+        border-radius: 7px;
+        padding: 5px 10px 5px 30px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .toggle-3__button::before {
+        position: absolute;
+        content: '';
+        top: 3.5px;
+        left: 10px;
+
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        
+        background: #EEEEEE;
+        border-radius: 100%;
+
+        transition: all 0.3s ease;
+    }
+
+    .toggle-3__button::after {
+        content: "OFF";
+        position: absolute;
+        top: 1px;
+        left: 40px;
+        font-size: 1rem;
+
+    }
+    .toggle-3__input:checked + .toggle-3__button {
+        background: #00ADB5;
+        border: #00ADB5;
+        color: white;
+    }
+
+        .toggle-3__input:checked + .toggle-3__button {
+        visibility: visible;
+
+        }  
+
+.toggle-3__input:checked + .toggle-3__button::after {
+content: "ON";
+}
+
+.toggle-4 {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+  margin-top: 1px;
+}
+
+  .toggle-4__input {
+      display: none;
+  }
+
+  .toggle-4__button {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+
+      width: 100px;
+      height: 30px;
+      border-radius: 7px;
+      padding: 5px 10px 5px 30px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      background: #00ADB5;
+      border: #00ADB5;
+      color: white;
+  }
+
+  .toggle-4__button::before {
+      position: absolute;
+      content: '';
+      top: 3.5px;
+      left: 10px;
+
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      
+      background: #EEEEEE;
+      border-radius: 100%;
+
+      transition: all 0.3s ease;
+  }
+
+  .toggle-4__button::after {
+      content: "ON";
+      position: absolute;
+      top: 1px;
+      left: 40px;
+      font-size: 1rem;
+
+
+  }
+  .toggle-4__input:checked + .toggle-4__button {
+    background: #222831;
+    color: #EEEEEE;
+    border: solid 2px #393E46;
+  }
+
+      .toggle-4__input:checked + .toggle-4__button {
+      visibility: visible;
+
+      }  
+
+.toggle-4__input:checked + .toggle-4__button::after {
+content: "OFF";
+}
+
+.toggle-5 {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+  margin-top: 1px;
+}
+.toggle-5__input {
+  display: none;
+}
+
+.toggle-5__button {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+
+  width: 100px;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px 10px 5px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: #00ADB5;
+  border: #00ADB5;
+  color: white;
+}
+
+.toggle-5__button::before {
+  position: absolute;
+  content: '';
+  top: 3.5px;
+  left: 10px;
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  
+  background: #EEEEEE;
+  border-radius: 100%;
+
+  transition: all 0.3s ease;
+}
+
+.toggle-5__button::after {
+  content: "ON";
+  position: absolute;
+  top: 1px;
+  left: 40px;
+  font-size: 1rem;
+
+
+}
+.toggle-5__input:checked + .toggle-5__button {
+background: #222831;
+color: #EEEEEE;
+border: solid 2px #393E46;
+}
+
+  .toggle-5__input:checked + .toggle-5__button {
+  visibility: visible;
+
+  }  
+
+.toggle-5__input:checked + .toggle-5__button::after {
+content: "OFF";
+}
+
+.message-box {
+  background-color: #393E46;
+  padding: 10px;
+  margin: 10px;
+  margin-top: -15px;
+  margin-left: -180px;
+  width: 1100px;
+  color: #EEEEEE;
+}
+.box2 {
+  width: 1100px;
+  height: 30px;
+  margin-left: -180px;
+  top: 105px;
+  color: #EEEEEE;
+  background-color: #393E46;
+  padding: 10px;
+
+}
+
+.box3 {
+  width: 1100px;
+  height: 100%;
+  margin-left: -180px;
+  top: 105px;
+  color: #EEEEEE;
+  background-color: #393E46;
+  padding: 10px;
+
+}
+.Sen1{
+  margin-left: 150px;
+  margin-top: -143px;
+  color: #EEEEEE;
+  text-transform: none;
+}
+.Sen2{
+  margin-left: 150px;
+  margin-top: 29px;
+  color: #EEEEEE;
+  text-transform: none;
+}
+.Sen3{
+  margin-left: 150px;
+  margin-top: 29px;
+  color: #EEEEEE;
+  text-transform: none;
+}
+    
